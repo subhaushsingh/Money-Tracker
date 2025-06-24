@@ -1,34 +1,58 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import '../src/index.css'
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
+ 
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+   <main className='max-w-[360px] mx-auto my-[30px]'>
+    <h1 className='font-bold text-5xl text-center ' style={{color:'#ddd'}}>₹10000<span>.00</span></h1>
+    <form className='mt-[40px]'>
+      <div className='basic flex  gap-2 mb-2.5'>
+        <input className='w-[100%]' type='text' placeholder={'new transaction'}/>
+        <input className='w-[100%]' type='datetime-local'  style={{color:'#777'}}/>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <div className='description  flex'>
+        <input className='w-[100%]' type='text' placeholder={'description'}/>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+        <button type='submit'>+ Add new transaction</button>
+    </form>
+    <div className='transactions mt-[10px]'>
+      <div className='transaction'>
+        <div className='left'>
+          <div className='name '>New samsung Tv</div>
+          <div className='description'>it was time for new tv</div>
+        </div>
+        <div className='right'>
+          <div className='price red'>-₹50000</div>
+          <div className='datetime'>23-06-2025 15:45</div>
+        </div>
+      </div>
+      <div className='transaction'>
+        <div className='left'>
+          <div className='name'>Gig job website</div>
+          <div className='description'>it was time for new tv</div>
+        </div>
+        <div className='right'>
+          <div className='price green'>+₹50000</div>
+          <div className='datetime'>23-06-2025 15:45</div>
+        </div>
+      </div>
+       <div className='transaction'>
+        <div className='left'>
+          <div className='name'>New Phone</div>
+          <div className='description'>it was time for new tv</div>
+        </div>
+        <div className='right'>
+          <div className='price red'>-₹19000</div>
+          <div className='datetime'>23-06-2025 15:45</div>
+        </div>
+      </div>
+    </div>
+   </main>
   )
 }
 
