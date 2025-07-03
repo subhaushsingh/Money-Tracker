@@ -33,7 +33,7 @@ A full-stack money tracking application to monitor your income and expenses in r
 ---
 
 ## 📦 Project Structure
-
+```
 MONEY-TRACKER/
 ├── Backend/
 │   ├── .env
@@ -55,3 +55,4 @@ MONEY-TRACKER/
 ├── package.json
 ├── README.md
 └── vite.config.js
+```
