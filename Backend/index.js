@@ -23,6 +23,12 @@ app.post('/backend/transaction',async(req,res)=>{
     res.json(transaction);
 })
 
+app.get('/backend/transactions', async(req,res)=>{
+    await mongoose.connect(process.env.MONGO_URL);
+    const transactions = await TransactionModel.find();
+    res.json(transactions);
+})
+
 app.listen(port,()=>{
     console.log(`listening on ${port}.`);
 })
