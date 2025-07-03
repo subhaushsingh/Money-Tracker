@@ -34,20 +34,29 @@ A full-stack money tracking application to monitor your income and expenses in r
 
 ## 📦 Project Structure
 
-money-tracker/
+MONEY-TRACKER/
+├── Backend/
+│   ├── .env
+│   └── index.js
 │
-├── backend/
-│ ├── models/
-│ ├── routes/
-│ ├── .env
-│ ├── server.js
+├── models/
+│   └── Transaction.js
 │
-├── frontend/
-│ ├── src/
-│ │ ├── components/
-│ │ ├── App.jsx
-│ │ ├── index.css
-│ ├── .env
-│ ├── vite.config.js or package.json (depending on setup)
-
-
+├── node_modules/
+│
+├── public/
+│
+├── src/
+│   ├── assets/
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+│
+├── .env
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package-lock.json
+├── package.json
+├── README.md
+└── vite.config.js
