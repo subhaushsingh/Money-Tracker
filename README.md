@@ -38,20 +38,15 @@ MONEY-TRACKER/
 ├── Backend/
 │   ├── .env
 │   └── index.js
-│
 ├── models/
 │   └── Transaction.js
-│
 ├── node_modules/
-│
 ├── public/
-│
 ├── src/
 │   ├── assets/
 │   ├── App.jsx
 │   ├── index.css
 │   └── main.jsx
-│
 ├── .env
 ├── .gitignore
 ├── eslint.config.js
